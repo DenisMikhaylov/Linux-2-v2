@@ -127,11 +127,11 @@ gate# nano /etc/dhcp/dhcpd.conf
 log-facility local7;
 
 shared-network LAN1 {
-  subnet 192.168.110.0 netmask 255.255.255.0 {
-    range 192.168.110.110 192.168.110.128;
-    option routers 192.168.110.1;
+  subnet 192.168.100.0 netmask 255.255.255.0 {
+    range 192.168.100.110 192.168.100.128;
+    option routers 192.168.100.1;
     option domain-name "corp.local";
-    option domain-name-servers 192.168.110.1, 192.168.100.20;
+    option domain-name-servers 192.168.100.1, 192.168.100.20;
     default-lease-time 600;
     max-lease-time 7200;
   }
@@ -140,7 +140,7 @@ shared-network LAN1 {
     range 192.168.110.110 192.168.110.128;
     option routers 192.168.110.1;
     option domain-name "corp.local";
-    option domain-name-servers 192.168.100.1, 192.168.100.20;
+    option domain-name-servers 192.168.110.1, 192.168.100.20;
     default-lease-time 600;
     max-lease-time 7200;
   }
