@@ -231,3 +231,7 @@ named-checkconf -z
 
 systemctl restart bind9
 ```
+4. Проверка
+```
+nslookup -q=PTR 1.100.168.192.in-addr.arpa
+```
