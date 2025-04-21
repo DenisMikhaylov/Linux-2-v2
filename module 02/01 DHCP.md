@@ -25,6 +25,10 @@ password: 111
 Для Windows
 login: Admin 
 password: Pa55w.rd
+
+Для Windows
+login: student
+password: password
 ```
 
 ### **Практическая работа**
