@@ -43,12 +43,26 @@ journalctl -u named.service
 ```
 journalctl _UID=<uid bind>
 ```
-4. За последжний час
+Фильтрация по уровням важности сообщений.
+```
+journalctl -p 5
+```
+Просмотр логов с момента последней загрузки
+```
+journalctl --boot
+```
+Просмотр логов процесса с PID 
+```
+journalctl _PID=<pid bind>
+```
+4. За последний час
 ```
 journalctl -u named.service --since '2024-03-11 13:00' --until '2024-03-11 13:59:59'
 ```
 5.  Посмотрите логи DHCP с помощью journalctl
 ```
 journalctl -u isc-dhcp-server.service
+```
+```
 journalctl -u isc-dhcp-relay.service
 ```
