@@ -27,3 +27,13 @@ compress – сжимать ротированые лог-файлы с помо
 delaycompress – не сжимать первый ротированый лог-файл;
 postrotate … endscript – выполнить указанные скрипты после ротации лог-файла.
 
+3. Проверка расписания
+```
+systemctl list-timers
+```
+```
+systemctl status logrotate.timer
+```
+```
+systemctl cat logrotate.timer
+```
