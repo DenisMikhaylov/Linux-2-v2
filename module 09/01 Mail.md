@@ -203,7 +203,7 @@ systemctl restart apache2
 
 ```
 Открываем проводник
-Gate.corp.ru/roundcube
+http://Gate.corp.local/roundcube
 пользователь ivan
 ```
 
