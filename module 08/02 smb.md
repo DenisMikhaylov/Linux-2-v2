@@ -8,7 +8,7 @@
 ```
 ss -pna4 | grep smbd
 ```
-4. Создание папrb для share
+4. Создание папок для share
 ```
 mkdir /var/smb
 ```
