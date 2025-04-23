@@ -59,7 +59,7 @@ telnet 127.0.0.1 25
 ```
 HELO gate.corp.local
 MAIL FROM: root@corp.local
-RCPT TO: ivan@corp.;pca;
+RCPT TO: ivan@corp.local
 DATA
 Hello
 .
