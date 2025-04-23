@@ -124,8 +124,15 @@ iptables -D INPUT <ввести номер правила>
 
 ```
 iptables -A INPUT -i enp0s3 -p udp --dport 22 -j DROP
+```
+```
 iptables -t nat -A PREROUTING -i enp0s3 --destination 192.168.100.1 -p tcp --dport 2222 -j DNAT --to-destination 192.168.100.20:22
+```
+```
 iptables -t nat -A PREROUTING -i enp0s3 --destination 192.168.100.1 -p tcp --dport 2221 -j DNAT --to-destination 192.168.100.21:22
+```
+```
+iptables -t mangle -A POSTROUTING -j TTL --ttl-set 65
 ```
 27. Правило для просмотр соединения
 ```
