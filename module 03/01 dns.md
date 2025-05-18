@@ -49,7 +49,7 @@ apt search '^bind9'
 ```
 
 ```
-gate:~# apt install bind9 -y
+apt install bind9 -y
 ```
 4. Проверка информации
 ```
@@ -72,7 +72,7 @@ gate# cat /etc/bind/named.conf
 Настройка сервера перенаправляющего запросы на DNS cервер провайдера
 
 ```
-# nano /etc/bind/named.conf.options
+nano /etc/bind/named.conf.options
 ```
 ```
         forwarders {
@@ -142,14 +142,18 @@ nano /etc/bind/corp.local
 ```
 ```
 $TTL    3h
-@    IN  SOA gate   root 2024041601 1d 12h  1w  3h
+@    IN  SOA gate.corp.local.   root.corp.local. 2024041601 1d 12h  1w  3h
+; se = serial number ref = refresh ret = update retry ex = expiry min = minimum
          NS  gate
          NS  srv1
          A   192.168.100.1
          MX  10  gate
+;NAME   TTL     CLASS   TYPE    Resource Record Full rerord
+;mail    1d      IN      A       192.168.10.13
+;TTL The TTL value is specified in seconds unless it is suffixed with m (minutes), h (hours), d (days), or w (weeks). 
+;NAME   TYPE    Resource Record Simple rerord
 gate     A   192.168.100.1
 srv1     A   192.168.100.20
-
 
 ```
 
