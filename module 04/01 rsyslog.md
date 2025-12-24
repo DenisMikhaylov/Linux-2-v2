@@ -123,7 +123,7 @@ rsyslogd -N 1
 ```
 systemctl restart rsyslog.service
 ```
-10. Переключиться на Srv1
+10. Переключиться на Gate
 
 11. Создать файл
 ```
