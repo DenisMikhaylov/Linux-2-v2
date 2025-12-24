@@ -193,7 +193,7 @@ nano /etc/dhcp/dhcpd.conf
 ```
 host <Имя компьютера windows> {
 hardware ethernet <Windows mac адрес>;
-fixed-address 192.168.10.112;
+fixed-address 192.168.100.112;
 }
 ```
 3. Проверка
