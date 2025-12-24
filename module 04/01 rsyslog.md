@@ -31,7 +31,7 @@ password: Pa55w.rd
 
 ### **Задача 1: Установка rsyslog**
 
-1. Установка rsyslog на Srv1
+1. Установка rsyslog на Gate
 ```
 apt install rsyslog
 ```
