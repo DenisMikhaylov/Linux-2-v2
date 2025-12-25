@@ -111,7 +111,7 @@ iptables -L
 
 23. Сmотрим номер правило
 ```
-iptables --line-numbers -t nat -L
+iptables --line-numbers -L
 
 ```
 24. смотрим номер правила
